@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'attorneys-component',
@@ -7,11 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AttorneysComponent {
 
-  openMikeDialog() {
+  @ViewChild('MichaelDialog') MichaelDialogtemplateRef: TemplateRef<Element>;
+  @ViewChild('MichaelDialog') MikeDialogtemplateRef: TemplateRef<Element>;
 
+  constructor(readonly MatDialog: MatDialog) {}
+
+  openMikeDialog() {
+    this.MatDialog.open(this.MichaelDialogtemplateRef);
   }
 
   openMichaelDialog() {
-    
+    this.MatDialog.open(this.MikeDialogtemplateRef);
   }
 }

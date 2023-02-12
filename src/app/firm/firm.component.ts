@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./firm.component.scss']
 })
 export class FirmComponent {
-
+  
 }
