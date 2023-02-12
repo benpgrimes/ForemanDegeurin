@@ -1,9 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AttorneysComponent } from './attorneys/attorneys.component';
-import { ContactComponent } from './contact/contact.component';
-import { FirmComponent } from './firm/firm.component';
-import { LegacyComponent } from './legacy/legacy.component';
 
 const routes: Routes = [
   {

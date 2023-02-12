@@ -1,20 +1,108 @@
-
-<div id="menu">
-    <a href="mike.html">Mike DeGeurin</a><br>
-    <a href="michael.html">Michael DeGeurin</a><br>
+<mat-card>
+    <mat-card-title>Attorneys</mat-card-title>
+    <mat-card-content>
+<div>
+    <img class="clickable" src="../../assets/images/attorney_mike_up.png" alt="Mike" (click)="openMikeDialog()">
+    <img class="clickable" src="../../assets/images/attorney_michael_up.png" alt="Michael" (click)="openMichaelDialog()">
+    <img class="clickable" src="../../assets/images/profilepic_andres.jpg" alt="Andres" (click)="openAndresDialog()">
+    <img class="clickable" src="../../assets/images/profilepic_bryan.jpg" alt="Brian" (click)="openBryanDialog()">
 </div>
+</mat-card-content>
+</mat-card>
 
+<ng-template #MikeDialog>
+    <mat-card-title>Mike Degeurin</mat-card-title>
+    <mat-dialog-content bp="flex">
+        <div bp="fit">
+            <img src="../../assets/images/attorney_mike_up.png" alt="Mike">
+            <div>JD Texas Tech University</div>
+            <div>BA University of Texas - Austin</div>
+            <a>Download vCard</a>
+        </div>
+        <div bp="fit">
+        Mike DeGeurin is widely recognized as one of our nation’s top trial attorneys. His courtroom success has earned him many honors,
+        including being named one of The National Law Journal’s Top 50 Lawyers under 50, Outstanding Criminal Defense Lawyer of Texas by the State Bar of Texas,
+        and Attorney of the Year by the Harris County Criminal Lawyers Association.Mike gained international acclaim by freeing inmate Clarence Brandley
+        from over a decade of wrongful imprisonment on Texas’ Death Row. Mike has also won numerous victories in white-collar and corporate crime cases,
+        including bank fraud, bribery, government contracting, wire fraud, money laundering and conspiracy cases.Mike has successfully represented many
+        international clients with legal matters, including individuals and companies from Mexico, Canada, England, France, and Germany.
+        Though Mike has made headlines with many high profile cases, he is often called upon to offer discreet advice to business leaders and their
+        employees regarding legal matters.
+    </div>
+    </mat-dialog-content>
+</ng-template>
 
-<div id="title">
-    Attorneys
-</div>
+<ng-template #MichaelDialog>
+    <mat-card-title>Michael Degeurin</mat-card-title>
+    <mat-dialog-content bp="flex">
+    <div bp="fit">
+        <img src="../../assets/images/attorney_michael_up.png" alt="Michael">
+        <div>JD St. Mary's University</div>
+        <div>Institute on World Legal Problems, University of Innsbruck, Austria</div>
+        <div>BA History, University of Colorado - Boulder</div>
+        <a>Download vCard</a>
+    </div>
+    <div bp="fit">
+        Michael DeGeurin worked on the Texas Court of Criminal Appeals as a briefing attorney for the Honorable Charlie Baird.
+        Michael then spent three years with the Austin-based firm Joseph A. Turner, P.C., focusing on State criminal cases.
+        In 1999, Michael returned to Houston and worked as an Assistant Federal Public Defender representing hundreds of individuals
+        charged with a variety of federal crimes. Michael joined Foreman, DeGeurin & DeGeurin in 2003,
+        and has continued his Federal and State practice. Michael has a reputation of true caring for his clients and their families. 
+        His compassion and dedication brings a unique perspective to his cases — helping clients tailor results that fit their
+        specific interests and situations.
+    </div>
+</mat-dialog-content>
+</ng-template>
 
+<ng-template #AndresDialog>
+    <mat-card-title>Andres Sanchez</mat-card-title>
+    <mat-dialog-content bp="flex">
+        <div bp="fit">
+            <img src="../../assets/images/profilepic_andres.jpg" alt="Andres">
+            <div>JD South Texas College of Law</div>
+            <div>BS Architechitectural Engineering, University of Texas - Austin</div>
+            <div>Completed Legal Coursework at:
+                <div>
+                    Bahçeşehir University, Faculty of Law, Istanbul, Turkey
+                </div>
+                <div>
+                    Universitat de Barcelona, Faculty of Law, Barcelona, Spain
+                </div>
+                <div>
+                    Charles University, Law Faculty, Prague, Czech Republic
+                </div>
+            </div>
+            <a>Download vCard</a>
+        </div>
+        <div bp="fit">
+            Andres Sanchez represents clients in a wide variety of legal matters.  Andres focuses on assisting
+            international clients with domestic matters, as well as providing domestic clients with legal solutions in foreign jurisdictions.
+            His clients are often individuals or small businesses who need assistance with legal matters abroad.  Andres represents clients
+            through extraditions, international investigations, foreign depositions, and assists domestic clients in hiring the right foreign counsel.
+            Prior to joining Foreman, DeGeurin & DeGeurin, Andres worked in the Federal Public Defender’s office in Houston. There, he represented
+            clients in cases ranging from complex white collar offenses, such as mortgage and securities fraud, to violent crimes, such as armed
+            bank robberies and drug trafficking offenses.  Andres was also a successful prosecutor for the Galveston County District Attorney’s office.
+            Immediately following law school, Andres worked in the International Criminal Tribunal for the former Yugoslavia, in conjunction with a
+            Croatian legal team representing a client accused of war crimes.
+    </div>
+    </mat-dialog-content>
+</ng-template>
 
-<div id="content">
-    <img src="https://www.foremandegeurin.com/images/attorney_mike_up.png" alt="Mike" onclick="openMikeDialog()">
-    <img src="https://www.foremandegeurin.com/images/attorney_michael_up.png" alt="Michael" onclick="openMichaelDialog()">
-</div>
-
-<template #MichaelDialog></template>
-
-<template #MikeDialog></template>
+<ng-template #BryanDialog>
+    <mat-card-title>Bryan Garris</mat-card-title>
+    <mat-dialog-content bp="flex">
+    <div bp="fit">
+        <img src="../../assets/images/profilepic_bryan.jpg" alt="Bryan">
+        <div>JD University of Houston Law Center</div>
+        <div>BS Biology, Texas Southern University</div>
+        <a>Download vCard</a>
+    </div>
+    <div bp="fit">
+        Bryan joined Foreman, DeGeurin & DeGeurin in 2012. His litigation practice focuses primarily on Texas state cases, both civil and criminal.
+        Bryan has represented clients in State criminal cases ranging from drug possession to murder cases. Bryan also helps clients with administrative issues,
+        and represents clients facing state or federal licensing issues. Bryan graduated from the University of Houston Law Center in 2011.
+        While in law school, Bryan worked with the Federal Public Defender’s office in Houston. He also interned with the Honorable Royal Furgeson
+        in the U.S. District Court for the Western District of Texas.
+    </div>
+</mat-dialog-content>
+</ng-template>

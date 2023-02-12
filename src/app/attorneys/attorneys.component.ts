@@ -8,16 +8,26 @@ import { MatDialog} from '@angular/material/dialog';
 })
 export class AttorneysComponent {
 
-  @ViewChild('MichaelDialog') MichaelDialogtemplateRef: TemplateRef<Element>;
-  @ViewChild('MichaelDialog') MikeDialogtemplateRef: TemplateRef<Element>;
+  @ViewChild('MichaelDialog') private readonly MichaelDialogTemplateRef: TemplateRef<any>;
+  @ViewChild('MikeDialog') private readonly MikeDialogTemplateRef: TemplateRef<any>;
+  @ViewChild('AndresDialog') private readonly AndresDialogTemplateRef: TemplateRef<any>;
+  @ViewChild('BryanDialog') private readonly BryanDialogTemplateRef: TemplateRef<any>;
 
-  constructor(readonly MatDialog: MatDialog) {}
+  constructor(readonly matDialog: MatDialog) {}
 
   openMikeDialog() {
-    this.MatDialog.open(this.MichaelDialogtemplateRef);
+    this.matDialog.open(this.MikeDialogTemplateRef);
   }
 
   openMichaelDialog() {
-    this.MatDialog.open(this.MikeDialogtemplateRef);
+    this.matDialog.open(this.MichaelDialogTemplateRef);
+  }
+
+  openAndresDialog() {
+    this.matDialog.open(this.AndresDialogTemplateRef);
+  }
+
+  openBryanDialog() {
+    this.matDialog.open(this.BryanDialogTemplateRef);
   }
 }
