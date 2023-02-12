@@ -7,18 +7,21 @@ import { LegacyComponent } from './legacy/legacy.component';
 
 const routes: Routes = [
   {
-    path: 'firm', component: FirmComponent
+    path: 'firm',
+    loadChildren: () => import('./firm/firm.module').then(m => m.FirmModule),
   },
   {
-    path: 'attorneys', component: AttorneysComponent
+    path: 'attorneys',
+    loadChildren: () => import('./attorneys/attorneys.module').then(m => m.AttorneysModule),
   },
   { 
-    path: 'legacy', component: LegacyComponent
+    path: 'legacy',
+    loadChildren: () => import('./legacy/legacy.module').then(m => m.LegacyModule),
   },
   { 
-    path: 'contact', component: ContactComponent
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule),
   }
-
 ];
 
 @NgModule({
