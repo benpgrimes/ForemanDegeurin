@@ -219,18 +219,20 @@
 
   footer {
     grid-area: footer;
+    position: fixed;
     bottom: 0;
     min-height: 50px;
-    background-color: lightsalmon;
+    background-color: burlywood;
     margin-top: 8px;
-    display: flex;
     align-items: center;
     line-height: 20px;
+    width:100%;
+    text-align: center;
+    display: grid;
   }
 
-  footer a {
-    display: flex;
-    align-items: center;
+  .margin-bottom--lg {
+    margin-bottom: 60px;
   }
 
   .github-star-badge {
