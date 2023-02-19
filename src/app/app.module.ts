@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card'; 
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatCardModule} from '@angular/material/card';
     FirmComponent,
     AttorneysComponent,
     LegacyComponent,
-    ContactComponent
+    ContactComponent,
+    GoogleMapComponent
   ],
   imports: [
     MatDialogModule,
