@@ -5,6 +5,7 @@ import { ContactComponent } from "./contact.component";
 const routes: Routes = [
     {
       path: '',
+      title: 'Contact Us',
       component: ContactComponent,
     }
   ];

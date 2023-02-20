@@ -5,6 +5,7 @@ import { FirmComponent } from "./firm.component";
 const routes: Routes = [
     {
       path: '',
+      title: 'Firm Overview',
       component: FirmComponent
     }
   ];

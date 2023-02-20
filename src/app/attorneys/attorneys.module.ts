@@ -5,6 +5,7 @@ import { AttorneysComponent } from "./attorneys.component";
 const routes: Routes = [
     {
       path: '',
+      title: 'Attorneys',
       component: AttorneysComponent,
     }
   ];

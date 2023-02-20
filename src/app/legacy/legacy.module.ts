@@ -5,6 +5,7 @@ import { LegacyComponent } from "./legacy.component";
 const routes: Routes = [
     {
       path: '',
+      title: 'Legacy',
       component: LegacyComponent
     }
   ];
