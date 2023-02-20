@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/blueprint-css/dist/blueprint.css",
               "src/styles.scss",
               {
               "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
@@ -96,6 +97,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/blueprint-css/dist/blueprint.css",
               "src/styles.scss"
             ],
             "scripts": []
