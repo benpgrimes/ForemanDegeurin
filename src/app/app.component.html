@@ -1,12 +1,15 @@
-  <div bp="flex vertical-center"></div>
-  <div bp="fit" id="logo">
-    <img src="assets/images/logo_home.png">
+  <div bp="flex vertical-center">
+  <div bp="fill margin">
+    <h1><span class="uppercase">Law Offices Of</span> 
+      <div class="text-large indent">Foreman, Degeurin &amp; Degeurin</div>
+    </h1>
   </div>
   
   
   <div bp="fit" id="photos">
     <img src="assets/images/home_photos.jpg">
   </div>
+</div>
   
   <mat-tab-group [selectedIndex]="activeTab.value" (selectedIndexChange)="tabIndexChange($event)">
     <mat-tab *ngFor="let tab of tabValues" [label]="tabNames[tab]"></mat-tab>

@@ -36,4 +36,42 @@ $foreman-degeurin-website-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #F0F3F1;
+
+}
+
+mat-card {
+  margin: 2em;
+  background-color: #F6F9F7;
+}
+
+h1, h2, mat-card-title {
+  font-size: 35px;
+  color: #A6714D;
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.indent {
+  padding-left: 50px;
+}
+
+.text-large {
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
