@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'firm',
+    pathMatch: 'full',
+  },
+  {
     path: 'firm',
     loadChildren: () => import('./firm/firm.module').then(m => m.FirmModule),
     data: {animation: 'FirmPage'},
