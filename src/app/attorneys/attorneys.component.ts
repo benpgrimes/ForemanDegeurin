@@ -23,10 +23,7 @@ export class AttorneysComponent {
     this.matDialog.open(this.MichaelDialogTemplateRef);
   }
 
-  openAndresDialog() {
-    this.matDialog.open(this.AndresDialogTemplateRef);
-  }
-
+  
   openBryanDialog() {
     this.matDialog.open(this.BryanDialogTemplateRef);
   }
