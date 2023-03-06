@@ -21,6 +21,10 @@ const transitionLeft = [
         query(':enter', [
         animate('300ms ease-out', style({ left: '0%' }))
         ]),
+        query(':leave *', [
+            style({}),
+            animate(1, style({}))
+        ])
     ]),
 ]
 
@@ -45,6 +49,10 @@ const transitionRight = [
         query(':enter', [
         animate('300ms ease-out', style({ left: '0%' }))
         ]),
+        query(':leave *', [
+            style({}),
+            animate(1, style({}))
+        ])
     ]),
 ]
 

@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
     this.activeTab.setValue(this.tabNames.indexOf(
       this.tabNames.find(tab => {
         const route = this.router.url.substring(1);
-        return route == tab.toLowerCase();
+        return route.includes(tab.toLowerCase());
       }) as string
     ));
   }

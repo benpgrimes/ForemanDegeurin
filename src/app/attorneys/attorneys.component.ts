@@ -1,30 +1,18 @@
-import { Component, TemplateRef, ViewChild } from '@angular/core';
-import { MatDialog} from '@angular/material/dialog';
+import { Component, ViewChild } from '@angular/core';
+import { ChildrenOutletContexts, Router, RouterOutlet } from '@angular/router';
+import { slideUpAnimation } from './slideUpAnimation';
 
 @Component({
   selector: 'attorneys-component',
   templateUrl: './attorneys.component.html',
-  styleUrls: ['./attorneys.component.scss']
+  styleUrls: ['./attorneys.component.scss'],
+  animations: [slideUpAnimation],
 })
-export class AttorneysComponent {
+export class AttorneysComponent { 
 
-  @ViewChild('MichaelDialog') private readonly MichaelDialogTemplateRef: TemplateRef<any>;
-  @ViewChild('MikeDialog') private readonly MikeDialogTemplateRef: TemplateRef<any>;
-  @ViewChild('AndresDialog') private readonly AndresDialogTemplateRef: TemplateRef<any>;
-  @ViewChild('BryanDialog') private readonly BryanDialogTemplateRef: TemplateRef<any>;
+  constructor(private readonly contexts: ChildrenOutletContexts) { }
 
-  constructor(readonly matDialog: MatDialog) {}
-
-  openMikeDialog() {
-    this.matDialog.open(this.MikeDialogTemplateRef);
-  }
-
-  openMichaelDialog() {
-    this.matDialog.open(this.MichaelDialogTemplateRef);
-  }
-
-  
-  openBryanDialog() {
-    this.matDialog.open(this.BryanDialogTemplateRef);
+  getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot.data?.['animation'];
   }
 }

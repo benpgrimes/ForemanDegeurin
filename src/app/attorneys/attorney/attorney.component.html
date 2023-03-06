@@ -1,0 +1,18 @@
+
+    <mat-card>
+        <mat-card-title bp="margin--sm">{{attorney.firstName}} {{attorney.lastName}}</mat-card-title>
+        <mat-card-content>
+            <div bp="flex">
+            <div bp="fit">
+                <img [src]="attorney.photoUrl" [alt]="attorney.firstName">
+                <div *ngFor="let credential of attorney.credentials" bp="margin-bottom">
+                    {{credential}}
+                </div>
+                <a>Download vCard</a>
+            </div>
+            <div bp="fill margin-left">
+                {{attorney.biography}}
+            </div>
+        </div>
+        </mat-card-content>
+    </mat-card>
