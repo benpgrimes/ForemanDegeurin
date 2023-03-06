@@ -229,10 +229,18 @@
     width:100%;
     text-align: center;
     display: grid;
+    outline:rgb(15, 15, 16);
   }
 
-  .margin-bottom--lg {
-    margin-bottom: 60px;
+  .tab-content {
+    padding-bottom: 60px;
+    max-width: 900px;
+    margin:auto;
+  }
+
+  .title-header {
+    margin: auto;
+    max-width:1500px;
   }
 
   .github-star-badge {
