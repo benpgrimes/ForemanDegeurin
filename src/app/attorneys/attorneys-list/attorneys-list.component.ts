@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChildrenOutletContexts, Router } from '@angular/router';
+import { AttorneysViewModel } from '../attorneys-view-model';
 import { slideUpAnimation } from '../slideUpAnimation';
 
 @Component({
@@ -9,9 +10,5 @@ import { slideUpAnimation } from '../slideUpAnimation';
   animations: [slideUpAnimation],
 })
 export class AttorneysListComponent { 
-  constructor(private readonly router: Router) { }
-
-  navigateToAttorneyPage(name: string) {
-    this.router.navigateByUrl(`attorneys/${name}`);
-  }
+  AttorneysViewModel = AttorneysViewModel;
 }

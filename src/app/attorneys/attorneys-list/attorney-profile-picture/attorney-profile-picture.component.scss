@@ -1,0 +1,25 @@
+.profile-container {
+    color: #597672;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    min-width: 180px;
+}
+
+.profile-container:hover {
+    color: #A6714D;
+}
+
+.profile-image {
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.profile-text {
+    text-transform: uppercase;
+    font: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing:2px;
+    font-size: 12px;
+}

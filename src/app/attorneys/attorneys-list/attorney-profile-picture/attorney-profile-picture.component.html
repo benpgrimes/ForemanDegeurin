@@ -1,0 +1,6 @@
+<div class="profile-container">
+    <img class="profile-image" bp="margin--sm" [src]="attorney.photoUrl" [alt]="attorney.firstName" (click)="navigateToAttorneyPage()">
+    <div class="profile-text">
+        {{attorney.firstName}} {{attorney.lastName}}
+    </div>
+</div>
