@@ -1,34 +1,39 @@
-<mat-card>
+<div bp="flex">
+<mat-card bp="fill">
     <mat-card-title bp="margin--sm">
         Contact Us
     </mat-card-title>
     <mat-card-content>
-        <div bp="flex">
-        <div bp="fill">
+        <div bp="full-width margin-top--lg text-center">       
+            <div>    
+                <a mat-raised-button color="primary" href="mailto:mailto:mdegeurin@foremandegeurin.com">Email Us</a>
+                <div class="seperator" bp="margin-top margin-bottom">Or</div>
+                <a mat-raised-button color="primary" href="tel:+17136559000">Call Us</a>
+            </div> 
+           
+            </div>
+
+            </mat-card-content>
+            <div bp="margin-bottom--lg margin-top--lg full-width text-center" class="bottom-align body1">
                 <div>300 Main Street, Third Floor</div>
                 <div>Houston, Texas 77002</div>
                 
                 <div><strong>phone</strong> +1 (713) 655-9000</div>
                 <div><strong>fax</strong> +1 (713) 655-1812</div>
-                
-                <div><a href="mailto:mdegeurin@foremandegeurin.com" style="font-variant:normal; text-transform:none;">Email us here</a></div>
-                <div><a href="mailto:m2degeurin@foremandegeurin.com" style="font-variant:normal; text-transform:none; line-height: 10px;"> or here</a></div>
             </div>
-
-            <div bp="fill">
-            <img src="../../assets/images/map.jpg" alt="Location of Office">
-        </div>
-    </div>
-            </mat-card-content>
             </mat-card>
 
+            <mat-card>
+                <img src="../../assets/images/map.jpg" alt="Location of Office">
+            </mat-card>
+        </div>
 <mat-card>
     <mat-card-content>
         <iframe 
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxTt3jS-_QIYR1j6hZOqur34&key=AIzaSyCc-Vvu1pfT9kBV42aMI9D0EyZrjj_6RVk"
         width="100%"
         height="500"
-        allowfullscreen
+        allowfullscreen=""
         style="border:0"
         loading="lazy">
     </iframe>

@@ -1,0 +1,34 @@
+.mat-mdc-raised-button.mat-primary
+    {
+        color: #311300;
+        background-color: #ffdcc7;
+        text-transform: uppercase;
+}
+
+.seperator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #006971;
+    text-transform: uppercase;
+}
+
+.seperator::before,
+.seperator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.seperator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.seperator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.bottom-align {
+    position: absolute;
+    bottom: 0;
+}
