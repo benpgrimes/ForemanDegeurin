@@ -4,13 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'firm',
+    redirectTo: 'overview',
     pathMatch: 'full',
   },
   {
-    path: 'firm',
-    loadChildren: () => import('./firm/firm.module').then(m => m.FirmModule),
-    data: {animation: 'FirmPage'},
+    path: 'overview',
+    loadChildren: () => import('./overview/overview.module').then(m => m.FirmModule),
+    data: {animation: 'OverviewPage'},
   },
   {
     path: 'attorneys',

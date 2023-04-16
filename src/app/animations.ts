@@ -58,9 +58,9 @@ const transitionRight = [
 
 export const slideInAnimation =
   trigger('routeAnimations', [
-    transition('* => FirmPage', transitionLeft),
+    transition('* => OverviewPage', transitionLeft),
     transition('* => ContactPage', transitionRight),
-    transition('FirmPage => *', transitionRight),
+    transition('OverviewPage => *', transitionRight),
     transition('ContactPage => *', transitionLeft),
     transition('AttorneysPage => LegacyPage', transitionRight),
     transition('LegacyPage => AttorneysPage', transitionLeft),

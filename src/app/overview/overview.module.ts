@@ -1,12 +1,12 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { FirmComponent } from "./firm.component";
+import { OverviewComponent } from "./overview.component";
 
 const routes: Routes = [
     {
       path: '',
       title: 'Firm Overview',
-      component: FirmComponent
+      component: OverviewComponent
     }
   ];
 

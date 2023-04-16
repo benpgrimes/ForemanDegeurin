@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {MatDividerModule} from '@angular/material/divider'
 
 import { AppComponent } from './app.component';
-import { FirmComponent } from './firm/firm.component';
+import { OverviewComponent } from './overview/overview.component';
 import { AttorneysComponent } from './attorneys/attorneys.component';
 import { LegacyComponent } from './legacy/legacy.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,7 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-    FirmComponent,
+    OverviewComponent,
     AttorneysComponent,
     LegacyComponent,
     ContactComponent,

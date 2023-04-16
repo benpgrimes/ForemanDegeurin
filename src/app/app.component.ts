@@ -5,7 +5,7 @@ import { ChildrenOutletContexts, Router } from '@angular/router';
 import { slideInAnimation } from './animations';
 
 enum PageTabEnum {
-  Firm = 0,
+  Overview = 0,
   Attorneys = 1,
   Legacy = 2,
   Contact = 3,
