@@ -1,6 +1,6 @@
 
 <div bp="flex">
-    <mat-card bp="fit text-center" class="photo-card">
+    <mat-card bp="fit text-center float-center" class="photo-card">
         <mat-card-title bp="margin--sm">{{attorney.firstName}} {{attorney.lastName}}</mat-card-title>
         <mat-card-content>
                 <img [src]="attorney.photoUrl" [alt]="attorney.firstName">
@@ -8,14 +8,14 @@
                     {{credential}}
                 </div>
                 <div bp="margin-top margin-bottom">
-                <a>Download vCard</a>
+                <a [href]="attorney.vCardUrl" download>Download vCard</a>
             </div>
         </mat-card-content>
     </mat-card>
 
     <mat-card bp="fill">
         <mat-card-content>
-            <div bp="flex vertical-center margin-left--lg margin-right--lg">
+            <div bp="flex vertical-center">
             <p *ngFor="let paragraph of attorney.biographyParagraphs">
                 {{paragraph}}
             </p>
