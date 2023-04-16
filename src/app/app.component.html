@@ -1,6 +1,7 @@
   <div class="title-header" bp="flex vertical-center">
   <div bp="fill margin">
-    <h1><span class="uppercase">Law Offices Of</span> 
+    <h1>
+      <span class="uppercase">Law Offices Of</span> 
       <div class="text-large indent">Foreman, Degeurin &amp; Degeurin</div>
     </h1>
   </div>
@@ -12,7 +13,7 @@
 </div>
   
   <nav mat-tab-nav-bar [tabPanel]="tabPanel">
-    <a mat-tab-link *ngFor="let tab of tabValues" (click)="tabIndexChange(tab)" [active]="activeTab.value === tab">{{tabNames[tab]}}</a>
+    <a mat-tab-link *ngFor="let tab of tabValues" (click)="tabIndexChange(tab)" [active]="activeTab.value === tab">{{'tabs.' + tabNames[tab] | lowercase | translate}}</a>
   </nav>
   
   <mat-tab-nav-panel #tabPanel>
@@ -21,7 +22,7 @@
   </div>
 </mat-tab-nav-panel>
  <footer>
-    300 Main Street, Third Floor, Houston, TX 77002 | phone +1 (713) 655-9000 | fax +1 (713) 655-1812
+    300 Main Street, {{'footer.thirdFloor' | translate}}, Houston, TX 77002 | {{'footer.phone' | translate}} +1 (713) 655-9000 | {{'footer.fax' | translate}} +1 (713) 655-1812
   
-    <a href="spanish/index.html">Ver este sitio web en Español</a>
+    <button class="link" (click)="changeLanguage()">{{'footer.changeLanguage' | translate}}</button>
 </footer>

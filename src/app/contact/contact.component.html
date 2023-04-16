@@ -1,25 +1,25 @@
 <div bp="flex">
 <mat-card bp="fill">
-    <mat-card-title bp="margin--sm">
-        Contact Us
+    <mat-card-title>
+        {{'contactPage.title' | translate}}
     </mat-card-title>
-    <mat-card-content>
-        <div bp="full-width margin-top--lg text-center">       
+    <mat-card-content >
+        <div bp="full-width margin-top--lg text-center" class="contact-details-actions">       
             <div>    
-                <a mat-raised-button color="primary" href="mailto:mailto:mdegeurin@foremandegeurin.com">Email Us</a>
-                <div class="seperator" bp="margin-top margin-bottom">Or</div>
-                <a mat-raised-button color="primary" href="tel:+17136559000">Call Us</a>
+                <a mat-raised-button color="primary" href="mailto:mailto:mdegeurin@foremandegeurin.com">{{'contactPage.emailUs' | translate}}</a>
+                <div class="seperator" bp="margin-top margin-bottom">{{'contactPage.or' | translate}}</div>
+                <a mat-raised-button color="primary" href="tel:+17136559000">{{'contactPage.callUs' | translate}}</a>
             </div> 
            
             </div>
 
             </mat-card-content>
             <div bp="margin-bottom--lg margin-top--lg full-width text-center" class="bottom-align body1">
-                <div>300 Main Street, Third Floor</div>
+                <div>300 Main Street, {{'contactPage.thirdFloor' | translate}}</div>
                 <div>Houston, Texas 77002</div>
                 
-                <div><strong>phone</strong> +1 (713) 655-9000</div>
-                <div><strong>fax</strong> +1 (713) 655-1812</div>
+                <div><strong>{{'contactPage.phone' | translate}}</strong> +1 (713) 655-9000</div>
+                <div><strong>{{'contactPage.fax' | translate}}</strong> +1 (713) 655-1812</div>
             </div>
             </mat-card>
 

@@ -1,8 +1,8 @@
 <mat-card>
-    <mat-card-title bp="margin--sm">Attorneys</mat-card-title>
+    <mat-card-title>{{'attorneysPage.title' | translate}}</mat-card-title>
     <mat-card-content>
         <div bp="full-width text-center flex">
-            <ng-container *ngFor="let attorney of AttorneysViewModel">
+            <ng-container *ngFor="let attorney of viewModel">
                 <attorneys-profile-picture bp="fill" [attorney]="attorney"></attorneys-profile-picture>
             </ng-container>
         </div>

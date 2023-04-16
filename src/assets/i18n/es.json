@@ -1,0 +1,54 @@
+{
+    "footer": {
+        "thirdFloor": "Tercer Piso",
+        "phone": "teléfono",
+        "fax": "fax",
+        "changeLanguage": "View this site in English"
+    },
+
+    "tabs": {
+        "overview": "Panoramica",
+        "attorneys": "Abogados",
+        "legacy": "Herencia",
+        "contact": "Contacto Con Nosotros"
+    },
+
+    "overviewPage": {
+        "title": "Panoramica de la Firma",
+        "paragraph1": "Nuestra firma representa clientes a nivel nacional e internacional en asuntos de alta confidencialidad. Sea que se trate de un individuo acusado de un delito, una sociedad mercantil que esté siendo objeto de una investigación del gobierno, o una persona que desea investigar un asunto por sí misma, le proporcionamos servicios jurídicos respaldados por años de experiencia. Hemos manejado exitosamente una amplia gama de asuntos jurídicas contenciosos por cuenta de nuestros clientes de todo el mundo.",
+        
+        "litigation": "Litigios",
+        "litigationParagraph": "Representamos clientes en todos los tribunales del Estado de Texas, así como en Tribunales Federales a través de todo el País. Con experiencia de cientos de juicios frente a jurados, nuestra firma tiene los conocimientos indispensables para prepararse y tener éxito en el juicio. Sea que un cliente se le acuse de un delito menor, o que se trate de una demanda sofisticada y compleja, nuestra firma trata cada caso como su prioridad más elevada. Cada uno de nuestros casos es igual de importante para nosotros, como lo es para nuestro cliente.",
+        
+        "govInvestigations": "Investigaciones Gubernamentales / Acciones Regulatorias",
+        "govInvestigationsParagraph": "Nuestra firma maneja una amplia gama de investigaciones gubernamentales y acciones regulatorias. Hemos representado a sociedades mercantiles y a sus empleados que estén siendo investigados por la Comisión de Intercambios y Valores Bursátiles (SEC por sus siglas en inglés), y otras dependencias gubernamentales. Tenemos asimismo experiencia representando clientes que han sido colocados por el Departamento del Tesoro en la Lista de Nacionales Especialmente Designados de la Oficina de Control de Activos Extranjeros (Lista de OFAC SDN por sus siglas en inglés). En otros casos, asesoramos a nuestros clientes aún antes de comenzar una investigación o alguna otra acción del gobierno.",
+        
+        "international": "Servicios Legales Internacionales",
+        "internationalParagraph": "Manejamos asuntos locales que tienen componentes internacionales, así como asuntos originados en el extranjero. Sea que se trate de una extradición de los Estados Unidos que requiera que se lleve a cabo una investigación o búsqueda de jurisprudencia en una jurisdicción extranjera, o que el cliente necesite recabar pruebas fuera del país en un caso que se haya presentado aquí, nosotros le podemos ayudar. Cuando un problema jurídico se esté tramitando fuera de los Estados Unidos, nuestra firma puede encontrarle al cliente la persona correcta y confiable que satisfaga sus necesidades en esa jurisdicción extranjera.",
+
+        "worldWide": "Proporcionándole Soluciones Jurídicas en Todo el Mundo",
+        "worldWideParagraph": "Cuando un litigio se inicia en el extranjero, es importante no sólo contar con los abogados apropiados y confiables en esa jurisdicción extranjera, sino que es igualmente importante tener abogados aquí en donde vive que le ayuden a entender los efectos que ese litigio puede llegar a tener sobres sus asuntos aquí. Tenemos años de experiencia trabajando con abogados de diferentes países. A través de esta red internacional de abogados, podemos ayudarle a encontrar el abogado apropiado para satisfacer sus necesidades específicas en el extranjero. Al mismo tiempo, podemos ayudar a proteger sus intereses en su jurisdicción local."
+    },
+
+    "attorneysPage": {
+        "title": "Abogados"
+    },
+
+    "attorneyPage": {
+        "vCard": "Baje la Tarjeta v"
+    },
+
+    "legacyPage": {
+        "title": "La Herencia De Percy Foreman"
+    },
+
+    "contactPage": {
+        "title": "Contacto Con Nosotros",
+        "emailUs": "Escríbanos",
+        "or": "O",
+        "callUs": "Llámenos",
+        "thirdFloor": "Tercer Piso",
+        "phone": "telefono",
+        "fax": "fax"
+    }
+}

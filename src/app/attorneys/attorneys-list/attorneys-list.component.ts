@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ChildrenOutletContexts, Router } from '@angular/router';
-import { AttorneysViewModel } from '../attorneys-view-model';
+import { TranslateService } from '@ngx-translate/core';
+import { Attorney, AttorneysViewModelEn, AttorneysViewModelEs } from '../attorneys-view-model';
 import { slideUpAnimation } from '../slideUpAnimation';
 
 @Component({
@@ -10,5 +10,14 @@ import { slideUpAnimation } from '../slideUpAnimation';
   animations: [slideUpAnimation],
 })
 export class AttorneysListComponent { 
-  AttorneysViewModel = AttorneysViewModel;
+  readonly viewModel: Attorney[];
+  
+  constructor(translateService: TranslateService) {
+    if (translateService.currentLang == 'en') {
+      this.viewModel = AttorneysViewModelEn;
+    }
+    else {
+      this.viewModel = AttorneysViewModelEs;
+    }
+  }
 }

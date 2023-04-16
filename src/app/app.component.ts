@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ChildrenOutletContexts, Router } from '@angular/router';
 import { slideInAnimation } from './animations';
+import { TranslateService } from '@ngx-translate/core';
 
 enum PageTabEnum {
   Overview = 0,
@@ -23,8 +24,10 @@ export class AppComponent implements OnInit {
 
   activeTab = new FormControl<PageTabEnum>(0);
 
-  constructor(private readonly router: Router, private readonly contexts: ChildrenOutletContexts) {
-    
+  constructor(private readonly router: Router, private readonly contexts: ChildrenOutletContexts, private readonly translateService: TranslateService) {
+    translateService.addLangs(['en', 'es']);
+    translateService.setDefaultLang('en');
+    translateService.use('en');
   }
 
   ngOnInit(): void {
@@ -41,6 +44,14 @@ export class AppComponent implements OnInit {
   tabIndexChange(tabIndex: number): void {
     this.activeTab.setValue(tabIndex);
     this.router.navigateByUrl(`/${this.tabNames[tabIndex].toLowerCase()}`);
+  }
+
+  changeLanguage() {
+    if(this.translateService.currentLang == 'en') {
+      this.translateService.use('es');
+    } else {
+      this.translateService.use('en');
+    }
   }
 
   private setActiveTab(): void {
