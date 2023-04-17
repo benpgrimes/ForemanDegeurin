@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { ActivatedRoute, Router } from "@angular/router";
 import { TranslateService } from "@ngx-translate/core";
+import { combineLatest, startWith } from "rxjs";
 import { Attorney, AttorneysViewModelEn, AttorneysViewModelEs } from "../attorneys-view-model";
 import { slideUpAnimation } from "../slideUpAnimation";
 
@@ -11,22 +12,23 @@ import { slideUpAnimation } from "../slideUpAnimation";
     styleUrls: ['./attorney.component.scss'],
   })
   export class AttorneyComponent implements OnInit {
-    readonly viewModel: Attorney[];
+    viewModel: Attorney[];
     attorney: Attorney;
 
     constructor(
-        translateService: TranslateService,
+        private readonly translateService: TranslateService,
         private readonly router: Router,
         private readonly activatedRoute: ActivatedRoute,
         private readonly titleService: Title)
-    {
-        this.viewModel = translateService.currentLang == 'en' 
-            ? AttorneysViewModelEn
-            : AttorneysViewModelEs;
-    }
+    { }
 
     ngOnInit(): void {
-        this.activatedRoute.params.subscribe(params => {
+        combineLatest([this.translateService.onLangChange.pipe(startWith({lang: this.translateService.currentLang})), this.activatedRoute.params])
+        .subscribe(([language, params]) => {
+            this.viewModel = language.lang == 'en' 
+                ? AttorneysViewModelEn
+                : AttorneysViewModelEs;
+
             const firstName: string = params['attorneyName'];
             const attorney = this.viewModel.find(attorney => attorney.firstName.toLowerCase() == firstName);
 
@@ -38,6 +40,6 @@ import { slideUpAnimation } from "../slideUpAnimation";
             {
                 this.router.navigateByUrl('/attorneys');
             }
-        });
+        })
     }
   }
