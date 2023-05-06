@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     this.setActiveTab();
     this.router.events.subscribe(() => {
       this.setActiveTab();
-    })
+    });
   }
 
   getRouteAnimationData() {

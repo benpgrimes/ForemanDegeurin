@@ -1,26 +1,26 @@
 
 <div bp="flex" *ngIf="attorney">
-    <mat-card bp="fit text-center float-center" class="photo-card">
-        <mat-card-title bp="margin--sm">{{attorney.firstName}} {{attorney.lastName}}</mat-card-title>
-        <mat-card-content>
-                <img [src]="attorney.photoUrl" [alt]="attorney.firstName">
-                <div *ngFor="let credential of attorney.credentials" bp="margin-top">
-                    {{credential}}
-                </div>
-                <div bp="margin-top margin-bottom">
-                <a [href]="attorney.vCardUrl" download>{{'attorneyPage.vCard' | translate}}</a>
-            </div>
-        </mat-card-content>
-    </mat-card>
+  <mat-card bp="fit text-center float-center" class="photo-card">
+    <mat-card-title bp="margin--sm">{{attorney.firstName}} {{attorney.lastName}}</mat-card-title>
+    <mat-card-content>
+      <img [src]="attorney.photoUrl" [alt]="attorney.firstName">
+      <div *ngFor="let credential of attorney.credentials" bp="margin-top">
+      {{credential}}
+      </div>
+      <div bp="margin-top margin-bottom">
+      <a [href]="attorney.vCardUrl" download>{{'attorneyPage.vCard' | translate}}</a>
+      </div>
+    </mat-card-content>
+  </mat-card>
 
-    <div bp="full-width show hide@md"></div>
-    <mat-card bp="fill">
-        <mat-card-content>
-            <div bp="flex vertical-center">
-            <p *ngFor="let paragraph of attorney.biographyParagraphs">
-                {{paragraph}}
-            </p>
-        </div>
-        </mat-card-content>
-    </mat-card>
+  <div bp="full-width show hide@md"></div>
+  <mat-card bp="fill">
+    <mat-card-content>
+      <div bp="flex vertical-center">
+        <p *ngFor="let paragraph of attorney.biographyParagraphs">
+          {{paragraph}}
+        </p>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </div>    

@@ -1,5 +1,5 @@
-  <div class="site-header">
-  <div class="title-header" bp="flex vertical-center float">
+<div class="site-header">
+<div class="title-header" bp="flex vertical-center float">
   <div bp="fill margin">
     <h1>
       <span class="uppercase">Law Offices Of</span> 
@@ -13,33 +13,33 @@
   </div>
 </div>
   
-  <nav bp="hide show@md" mat-tab-nav-bar [tabPanel]="tabPanel">
-    <a mat-tab-link *ngFor="let tab of tabValues" (click)="tabIndexChange(tab)" [active]="activeTab.value === tab">{{'tabs.' + tabNames[tab] | lowercase | translate}}</a>
-  </nav>
+<nav bp="hide show@md" mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a mat-tab-link *ngFor="let tab of tabValues" (click)="tabIndexChange(tab)" [active]="activeTab.value === tab">{{'tabs.' + tabNames[tab] | lowercase | translate}}</a>
+</nav>
 
-  <mat-accordion bp="show hide@md">
-    <mat-expansion-panel hideToggle #menu="matExpansionPanel">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <div bp="fill"></div>
-          <div bp="flex vertical-center">
-            <mat-icon bp="fit margin-right--xs">menu</mat-icon>
-            <div>{{'tabs.menu' | translate}}</div>
-          </div>
-          <div bp="fill"></div>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <button *ngFor="let tab of tabValues" bp="full-width" mat-button (click)="menu.expanded = false; tabIndexChange(tab)">{{'tabs.' + tabNames[tab] | lowercase | translate}}</button>
-    </mat-expansion-panel>
-  </mat-accordion>
+<mat-accordion bp="show hide@md">
+  <mat-expansion-panel hideToggle #menu="matExpansionPanel">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div bp="fill"></div>
+        <div bp="flex vertical-center">
+          <mat-icon bp="fit margin-right--xs">menu</mat-icon>
+          <div>{{'tabs.menu' | translate}}</div>
+        </div>
+        <div bp="fill"></div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <button *ngFor="let tab of tabValues" bp="full-width" mat-button (click)="menu.expanded = false; tabIndexChange(tab)">{{'tabs.' + tabNames[tab] | lowercase | translate}}</button>
+  </mat-expansion-panel>
+</mat-accordion>
   
-  <mat-tab-nav-panel #tabPanel>
+<mat-tab-nav-panel #tabPanel>
   <div class="tab-content" bp="margin-top" [@routeAnimations]="getRouteAnimationData()">
     <router-outlet></router-outlet>
   </div>
 </mat-tab-nav-panel>
- <footer>
-    300 Main Street, {{'footer.thirdFloor' | translate}}, Houston, TX 77002 | {{'footer.phone' | translate}} +1 (713) 655-9000 | {{'footer.fax' | translate}} +1 (713) 655-1812
-  
-    <button class="link" (click)="changeLanguage()">{{'footer.changeLanguage' | translate}}</button>
+<footer>
+  300 Main Street, {{'footer.thirdFloor' | translate}}, Houston, TX 77002 | {{'footer.phone' | translate}} +1 (713) 655-9000 | {{'footer.fax' | translate}} +1 (713) 655-1812
+
+  <button class="link" (click)="changeLanguage()">{{'footer.changeLanguage' | translate}}</button>
 </footer>

@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { ChildrenOutletContexts, Router, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ChildrenOutletContexts } from '@angular/router';
 import { slideUpAnimation } from './slideUpAnimation';
 
 @Component({
@@ -9,7 +9,6 @@ import { slideUpAnimation } from './slideUpAnimation';
   animations: [slideUpAnimation],
 })
 export class AttorneysComponent { 
-
   constructor(private readonly contexts: ChildrenOutletContexts) { }
 
   getRouteAnimationData() {

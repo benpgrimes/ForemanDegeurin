@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './legacy.component.html',
   styleUrls: ['./legacy.component.scss']
 })
-export class LegacyComponent {
-
-}
+export class LegacyComponent { }

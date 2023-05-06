@@ -10,9 +10,9 @@ import { Attorney } from '../../attorneys-view-model';
 export class AttorneyProfilePictureComponent { 
     @Input() attorney: Attorney;
 
-  constructor(private readonly router: Router) { }
+    constructor(private readonly router: Router) { }
 
-  navigateToAttorneyPage() {
-    this.router.navigateByUrl(`attorneys/${this.attorney.firstName.toLowerCase()}`);
-  }
+    navigateToAttorneyPage() {
+      this.router.navigateByUrl(`attorneys/${this.attorney.firstName.toLowerCase()}`);
+    }
 }
