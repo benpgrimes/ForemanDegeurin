@@ -22,6 +22,11 @@ const routes: Routes = [
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule),
     data: { animation:'ContactPage' },
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full',
   }
 ];
 
