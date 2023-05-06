@@ -59,7 +59,10 @@ export class AppComponent implements OnInit {
   private setActiveTab(): void {
     this.activeTab.setValue(this.tabNames.indexOf(
       this.tabNames.find(tab => {
-        const route = this.router.url.substring(1);
+        let route = this.router.url.substring(1);
+        if(route === '') {
+          route = 'overview';
+        }
         return route.includes(tab.toLowerCase());
       }) as string
     ));
