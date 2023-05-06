@@ -1,14 +1,14 @@
   <div class="site-header">
-  <div class="title-header" bp="flex vertical-center">
+  <div class="title-header" bp="flex vertical-center float">
   <div bp="fill margin">
     <h1>
       <span class="uppercase">Law Offices Of</span> 
-      <div class="text-large indent">Foreman, Degeurin &amp; Degeurin</div>
+      <div class="text-large indent">Foreman, DeGeurin &amp; DeGeurin</div>
     </h1>
   </div>
   
   
-  <div bp="fit" id="photos">
+  <div bp="fit" id="photos" bp="float-center">
     <img src="assets/images/home_photos.jpg">
   </div>
 </div>
@@ -34,7 +34,7 @@
   </mat-accordion>
   
   <mat-tab-nav-panel #tabPanel>
-  <div class="tab-content" [@routeAnimations]="getRouteAnimationData()">
+  <div class="tab-content" bp="margin-top" [@routeAnimations]="getRouteAnimationData()">
     <router-outlet></router-outlet>
   </div>
 </mat-tab-nav-panel>
