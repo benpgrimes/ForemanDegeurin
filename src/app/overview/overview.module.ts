@@ -5,7 +5,7 @@ import { OverviewComponent } from "./overview.component";
 const routes: Routes = [
     {
       path: '',
-      title: 'Firm Overview',
+      title: 'Law Offices of Foreman DeGeurin & DeGeurin',
       component: OverviewComponent
     }
   ];

@@ -43,7 +43,9 @@ export class AppComponent implements OnInit {
 
   tabIndexChange(tabIndex: number): void {
     this.activeTab.setValue(tabIndex);
-    this.router.navigateByUrl(`/${this.tabNames[tabIndex].toLowerCase()}`);
+    const path = this.tabNames[tabIndex].toLowerCase() === 'overview' ? '' : this.tabNames[tabIndex].toLowerCase();
+
+    this.router.navigateByUrl(`/${path}`);
   }
 
   changeLanguage() {

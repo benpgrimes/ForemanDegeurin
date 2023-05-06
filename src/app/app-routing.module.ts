@@ -4,13 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'overview',
-    pathMatch: 'full',
-  },
-  {
-    path: 'overview',
     loadChildren: () => import('./overview/overview.module').then(m => m.FirmModule),
     data: {animation: 'OverviewPage'},
+    pathMatch: 'full',
   },
   {
     path: 'attorneys',
