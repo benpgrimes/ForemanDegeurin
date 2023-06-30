@@ -4,6 +4,7 @@ import { FormControl } from '@angular/forms';
 import { ChildrenOutletContexts, Router } from '@angular/router';
 import { slideInAnimation } from './animations';
 import { TranslateService } from '@ngx-translate/core';
+import { Meta } from '@angular/platform-browser';
 
 enum PageTabEnum {
   Overview = 0,
@@ -24,10 +25,13 @@ export class AppComponent implements OnInit {
 
   activeTab = new FormControl<PageTabEnum>(0);
 
-  constructor(private readonly router: Router, private readonly contexts: ChildrenOutletContexts, private readonly translateService: TranslateService) {
+  constructor(private readonly router: Router, private readonly contexts: ChildrenOutletContexts, private readonly translateService: TranslateService, private meta: Meta) {
     translateService.addLangs(['en', 'es']);
     translateService.setDefaultLang('en');
     translateService.use('en');
+
+    this.meta.addTag({name: 'google-site-verification', content: "8Z1Zhhd2ODJRfUhtQRcaFOaG47hRX87-E0K_nxSaD9Q"});
+    this.meta.addTag({ name: 'keywords', content: 'criminal defense attorney, Houston, Texas, criminal charges, legal representation, law firm' });
   }
 
   ngOnInit(): void {

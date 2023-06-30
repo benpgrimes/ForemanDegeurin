@@ -9,8 +9,5 @@ import { Meta } from '@angular/platform-browser';
 export class OverviewComponent {
   constructor(private meta: Meta) {
     this.meta.addTag({ name: 'description', content: 'Our firm represents clients in sensitive matters nationally and internationally. Whether our client is an individual accused of a crime, a corporation that is the subject of a government investigation, or a person seeking to investigate a matter themselves, we provide legal services supported by years of experience. We have successfully handled a wide variety of disputed legal matters for our clients all around the globe.' });
-    this.meta.addTag({ name: 'keywords', content: 'criminal defense attorney, Houston, Texas, criminal charges, legal representation, law firm' });
-    
-    this.meta.addTag({name: 'google-site-verification', content: "8Z1Zhhd2ODJRfUhtQRcaFOaG47hRX87-E0K_nxSaD9Q"})
   }
 }
