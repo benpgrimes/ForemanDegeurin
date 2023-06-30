@@ -11,15 +11,15 @@ const transitionLeft = [
     })
   ]),
   query(':enter', [
-    style({ left: '-100%', opacity: 0 })
+    style({ transform: 'translateX(-100%)', opacity: 0 })
   ]),
   query(':leave', animateChild()),
   group([
     query(':leave', [
-      animate('400ms ease-out', style({ left: '100%', opacity: 0 }))
+      animate('400ms ease-out', style({ transform: 'translateX(100%)', opacity: 0 }))
     ]),
     query(':enter', [
-      animate('400ms ease-out', style({ left: '0%', opacity: 1 }))
+      animate('400ms ease-out', style({ transform: 'translateX(0%)', opacity: 1 }))
     ]),
     query(':leave *', [
       style({}),
@@ -39,15 +39,15 @@ const transitionRight = [
     })
   ]),
   query(':enter', [
-    style({ left: '100%', opacity: 0 })
+    style({ transform: 'translateX(100%)', opacity: 0 })
   ]),
   query(':leave', animateChild()),
   group([
     query(':leave', [
-      animate('400ms ease-out', style({ left: '-100%', opacity: 0 }))
+      animate('400ms ease-out', style({ transform: 'translateX(-100%)', opacity: 0 }))
     ]),
     query(':enter', [
-      animate('400ms ease-out', style({ left: '0%', opacity: 1 }))
+      animate('400ms ease-out', style({ transform: 'translateX(0%)', opacity: 1 }))
     ]),
     query(':leave *', [
       style({}),

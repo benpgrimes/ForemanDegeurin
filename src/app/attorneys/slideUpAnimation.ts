@@ -7,19 +7,20 @@ const transitionUp = [
       position: 'absolute',
       top: 0,
       left: 0,
-      width: '100%'
+      width: '100%',
+      transform: 'translateY(0)'
     })
   ]),
   query(':enter', [
-    style({ top: '30px', opacity: 0 })
+    style({ transform: 'translateY(5%)', opacity: 0 })
   ]),
   query(':leave', animateChild()),
   group([
     query(':leave', [
-      animate('0ms ease-out', style({ top: '-100%', opacity: 0 }))
+      animate('0ms ease-out', style({ transform: 'translateY(-100%)', opacity: 0 }))
     ]),
     query(':enter', [
-      animate('400ms ease-out', style({ top: '0%', opacity: 1 }))
+      animate('400ms ease-out', style({ transform: 'translateY(0%)', opacity: 1 }))
     ]),
   ]),
 ];
