@@ -33,7 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     MatDialogModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     MatTabsModule,
     AppRoutingModule,
     BrowserAnimationsModule,

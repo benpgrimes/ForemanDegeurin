@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/foreman-degeurin-website",
+            "outputPath": "dist/foreman-degeurin-website/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -117,6 +117,61 @@
               "src/**/*.html"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/foreman-degeurin-website/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "optimization": true
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "foreman-degeurin-website:build:development",
+              "serverTarget": "foreman-degeurin-website:server:development"
+            },
+            "production": {
+              "browserTarget": "foreman-degeurin-website:build:production",
+              "serverTarget": "foreman-degeurin-website:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "foreman-degeurin-website:build:production",
+              "serverTarget": "foreman-degeurin-website:server:production"
+            },
+            "development": {
+              "browserTarget": "foreman-degeurin-website:build:development",
+              "serverTarget": "foreman-degeurin-website:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
