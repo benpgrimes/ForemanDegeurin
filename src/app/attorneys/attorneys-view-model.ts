@@ -31,17 +31,6 @@ export const AttorneysViewModelEn: Attorney[] = [
     photoUrl: '/assets/images/profilepic_michael.jpg',
     vCardUrl: '/assets/vCards/Michael_DeGeurin.vcf'
   },
-  {
-    firstName: 'Bryan',
-    lastName: 'Garris',
-    credentials: ['JD University of Houston Law Center', 'BS Biology, Texas Southern University'],
-    biographyParagraphs: [
-      'Bryan joined Foreman, DeGeurin & DeGeurin in 2012. His litigation practice focuses primarily on Texas state cases, both civil and criminal. Bryan has represented clients in State criminal cases ranging from drug possession to murder cases. Bryan also helps clients with administrative issues, and represents clients facing state or federal licensing issues.',
-      'Bryan graduated from the University of Houston Law Center in 2011. While in law school, Bryan worked with the Federal Public Defender’s office in Houston. He also interned with the Honorable Royal Furgeson in the U.S. District Court for the Western District of Texas.'
-    ],
-    photoUrl: '/assets/images/profilepic_bryan.jpg',
-    vCardUrl: '/assets/vCards/Bryan_Garris.vcf',
-  }
 ];
 
 export const AttorneysViewModelEs: Attorney[] = [
@@ -65,15 +54,4 @@ export const AttorneysViewModelEs: Attorney[] = [
     photoUrl: '/assets/images/profilepic_michael.jpg',
     vCardUrl: '/assets/vCards/Michael_DeGeurin.vcf'
   },
-  {
-    firstName: 'Bryan',
-    lastName: 'Garris',
-    credentials: ['JD University of Houston Law Center', 'BS Biology, Texas Southern University'],
-    biographyParagraphs: [
-      'Bryan se unió a Foreman, DeGeurin & DeGeurin en 2012. Su práctica de litigio se enfoca principalmente en casos del estado de Texas, tanto civiles como penales. Bryan ha representado a clientes en casos penales estatales que van desde posesión de drogas hasta casos de asesinato. Bryan también ayuda a los clientes con problemas administrativos y representa a clientes que enfrentan problemas de licencias estatales o federales.',
-      'Bryan se graduó de la Facultad de Derecho de la Universidad de Houston en 2011. Mientras estaba en la escuela de derecho, Bryan trabajó en la oficina del Defensor Público Federal en Houston. También hizo una pasantía con el Honorable Royal Furgeson en el Tribunal de Distrito de los Estados Unidos para el Distrito Oeste de Texas.'
-    ],
-    photoUrl: '/assets/images/profilepic_bryan.jpg',
-    vCardUrl: '/assets/vCards/Bryan_Garris.vcf',
-  }
 ];
